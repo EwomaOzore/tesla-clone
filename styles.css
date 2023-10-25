@@ -162,14 +162,15 @@ nav {
     margin-bottom: 20px;
 }
 
-.video-container {
+.video-container{
     width: 70%;
     margin: 0;
 }
 
-video {
+.video-container video {
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
+    object-fit: cover;
 }
 
 .buttons-e {
@@ -447,13 +448,83 @@ video {
 }
 
 /* Video Section */
-.video-section {
+.video-section video{
     width: 100%;
-    height: 100%;
+    height: 50vh;
     background-color: #000;
-    object-fit: contain;
+    object-fit: cover;
 }
 
-.video-container {
-    max-width: 100%;
+/* Power Your Home Section */
+.power-section {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 60px 0;
+}
+
+.power-section .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.power-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.learn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin: 10px;
+}
+
+.learn:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+.consultation {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #555;
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.get-updates-link {
+    color: #fff;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+.buttons-end{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.footer-section {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
 }
