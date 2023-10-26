@@ -10,11 +10,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-}
-
-header .logo {
-    width: 30%;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding: 0 60px;
+    z-index: 2;
 }
 
 header .language {
@@ -30,7 +30,8 @@ main {
 main .video {
     width: 65%;
     padding: 0 60px;
-    position: sticky;
+    position: fixed;
+    top: 92px;
 }
 
 main .video video {
@@ -43,11 +44,13 @@ main .video video {
 form.power-form {
     width: 25%;
     padding: 20px;
+    margin-left: 70%;
+    margin-top: 92px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.header-text p{
+.header-text p {
     margin-bottom: 10%;
 }
 
@@ -82,6 +85,6 @@ form.power-form {
     height: 30vh;
 }
 
-.product-text{
+.product-text {
     padding-left: 25px;
 }
