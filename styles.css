@@ -1,5 +1,5 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -74,6 +74,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .hero-content h1 {
@@ -122,6 +123,7 @@ nav {
     background-color: transparent;
     border: 2px solid #fff;
     color: #fff;
+    padding: 17px;
 }
 
 .cta-button.consultation:hover {
@@ -162,7 +164,7 @@ nav {
     margin-bottom: 20px;
 }
 
-.video-container{
+.video-container {
     width: 70%;
     margin: 0;
 }
@@ -232,27 +234,6 @@ nav {
     width: 50%;
 }
 
-.animation-container {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    /* Center the lines horizontally */
-    align-items: flex-end;
-    /* Align the lines to the bottom of the container */
-    height: 10%;
-    /* Fill the entire container height */
-}
-
-.line {
-    width: 3px;
-    height: 0;
-    background-color: #fff;
-    transition: height 0.6s;
-    margin: 50px 10px;
-}
-
 .text {
     opacity: 0;
     color: #fff;
@@ -262,7 +243,6 @@ nav {
 .clean-aesthetic {
     background-color: #000;
     color: #fff;
-    /* padding: 100% 0; */
 }
 
 .clean-aesthetic .content {
@@ -289,33 +269,6 @@ nav {
 
 .clean-aesthetic .image-container img {
     width: 100%;
-}
-
-.clean-aesthetic .line {
-    position: absolute;
-    width: 3px;
-    background-color: #fff;
-    /* top: 0;
-    bottom: 0;
-    right: 0; */
-}
-
-.clean-aesthetic .line1 {
-    left: 10%;
-}
-
-.clean-aesthetic .line2 {
-    left: 40%;
-}
-
-.clean-aesthetic .line3 {
-    left: 70%;
-}
-
-.clean-aesthetic .line-text {
-    position: absolute;
-    text-align: left;
-
 }
 
 /* Next Section with Black Background */
@@ -448,7 +401,7 @@ nav {
 }
 
 /* Video Section */
-.video-section video{
+.video-section video {
     width: 100%;
     height: 50vh;
     background-color: #000;
@@ -457,8 +410,10 @@ nav {
 
 /* Power Your Home Section */
 .power-section {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
+    background-color: #000;
+    /* Black background */
+    color: #fff;
+    /* White text color */
     text-align: center;
     padding: 60px 0;
 }
@@ -509,7 +464,7 @@ nav {
     text-decoration: underline;
 }
 
-.buttons-end{
+.buttons-end {
     display: flex;
     flex-direction: column;
     width: 20%;
@@ -527,4 +482,255 @@ nav {
     text-decoration: none;
     color: #fff;
     margin: 0 15px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        display: none;
+    }
+    .features h2{
+        font-size: 12px;
+    }
+
+    #hero-video {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .hero-content {
+        font-size: 11px;
+    }
+
+    .hero-content .buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .hero-content .buttons a {
+        margin-right: 0;
+        width: 70%;
+    }
+
+    .next-section .content {
+        flex-direction: column;
+    }
+
+    .text-content {
+        padding: 20px;
+        width: 80%;
+    }
+
+    .text-content h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .text-content h2 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .text-content p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    .buttons-e {
+        width: 102%
+    }
+
+    .buttons-e .cta-button {
+        width: 100%;
+    }
+
+    .video-container video {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .next-section.design-section.flipped .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .next-section.design-section.flipped .text-content {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .next-section.design-section.flipped .text-content h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .next-section.design-section.flipped .buttons-de .cta-button {
+        width: 100%;
+    }
+
+    .next-section.design-section.flipped .image-container {
+        width: 100%;
+    }
+
+    .next-section.design-section.flipped .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .clean-aesthetic .content {
+        flex-direction: column;
+    }
+
+    .clean-aesthetic .text-content {
+        width: 90%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .clean-aesthetic .text-content h2 {
+        font-size: 24px;
+    }
+
+    .clean-aesthetic .image-container {
+        width: 100%;
+    }
+
+    .clean-aesthetic .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .next-section.black-bg {
+        padding: 30px;
+    }
+
+    .next-section.black-bg .header {
+        text-align: center;
+    }
+
+    .next-section.black-bg .header h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .next-section.black-bg .header p {
+        font-size: 16px;
+    }
+
+    .next-section.black-bg .video-text {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .next-section.black-bg .video {
+        padding: 0;
+        width: 100%;
+    }
+
+    .next-section.black-bg .video video {
+        width: 100%;
+        height: auto;
+    }
+
+    .next-section.black-bg .text-picture {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .next-section.black-bg .text-picture>div {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .next-section.black-bg .picture {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .next-section.black-bg .picture img {
+        width: 100%;
+        height: auto;
+    }
+
+    .full-width-image {
+        height: auto;
+    }
+
+    .full-width-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+    .new-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-content,
+    .right-content {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-content h1 {
+        font-size: 28px;
+    }
+
+    .right-content p {
+        font-size: 16px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-container .cta-button {
+        margin: 10px 0;
+        width: 50%;
+    }
+
+    .power-section .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons-end {
+        margin-top: 20px;
+        width: 70%;
+        align-items: center;
+    }
+
+    .learn,
+    .consultation,
+    .get-updates-link {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links a {
+        margin: 5px 0;
+    }
 }
