@@ -18,7 +18,7 @@ header {
 }
 
 header .language {
-    text-align: right;
+    /* text-align: right; */
     width: 10%;
 }
 
@@ -87,4 +87,50 @@ form.power-form {
 
 .product-text {
     padding-left: 25px;
+}
+
+@media (max-width: 700px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header .language {
+        width: 10%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main .video {
+        padding: 0;
+        width: 100%;
+        margin-top: 30px;
+        position: relative;
+    }
+
+    main .video video {
+        width: 110%;
+        border-radius: 0;
+        height: 50vh;
+    }
+
+    form.power-form {
+        width: 100%;
+        margin-top: 20%;
+        margin-left: 0;
+    }
+
+    .header-text p {
+        margin-bottom: 5%;
+    }
+
+    .input-form {
+        margin-bottom: 10%;
+    }
 }
