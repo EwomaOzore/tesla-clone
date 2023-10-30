@@ -101,11 +101,12 @@ nav {
 
 .buttons {
     margin-top: 20px;
+    width: 100%;
 }
 
 .cta-button {
     display: inline-block;
-    width: 30%;
+    width: 40%;
     padding: 20px 10px;
     border-radius: 5px;
     font-weight: bold;
@@ -187,7 +188,6 @@ nav {
     border: 3px solid #3CD458;
     color: #3CD458;
     transition: background-color 0.3s, color 0.3s;
-    margin-bottom: 25px;
 }
 
 .cta-button.learn-more:hover {
@@ -197,6 +197,7 @@ nav {
 
 .cta-button.get-started {
     text-align: center;
+    margin-bottom: 25px;
     width: 80%;
     background-color: #3CD458;
     border: 3px solid #3CD458;
@@ -353,7 +354,7 @@ nav {
 
 .left-content {
     width: 30%;
-    padding-left: 200px;
+    padding-left: 100px;
     justify-content: left;
 }
 
@@ -370,14 +371,21 @@ nav {
     flex-direction: row;
 }
 
+.button-container .cta-button.green{
+    background-color: #3CD458;
+    color: #000;
+    border: 2px solid #3CD458;
+
+}
+
 .button-container .cta-button {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
     margin-right: 10px;
-    background-color: #3CD458;
     border: 2px solid #000;
+    background-color: transparent;
     color: #000;
     text-decoration: none;
     font-weight: bold;
