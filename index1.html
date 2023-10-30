@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="styles1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <title>Tesla Site</title>
@@ -37,46 +40,51 @@
 
             <div class="input-form">
                 <label for="homeAddress">Location:</label>
-                <select id="Country" name="state" size="1" class="custom-select">
-                    <option value="" selected="selected">Select A State</option>
-                    <option value="Abia">Abia</option>
-                    <option value="Abuja">Abuja</option>
-                    <option value="Adamawa">Adamawa</option>
-                    <option value="Akwa Ibom">Akwa Ibom</option>
-                    <option value="Anambra">Anambra</option>
-                    <option value="Bauchi">Bauchi</option>
-                    <option value="Bayelsa">Bayelsa</option>
-                    <option value="Benue">Benue</option>
-                    <option value="Borno">Borno</option>
-                    <option value="Cross River">Cross River</option>
-                    <option value="Delta">Delta</option>
-                    <option value="Ebonyi">Ebonyi</option>
-                    <option value="Edo">Edo</option>
-                    <option value="Ekiti">Ekiti</option>
-                    <option value="Enugu">Enugu</option>
-                    <option value="Gombe">Gombe</option>
-                    <option value="Imo">Imo</option>
-                    <option value="Jigawa">Jigawa</option>
-                    <option value="Kaduna">Kaduna</option>
-                    <option value="Kano">Kano</option>
-                    <option value="Katsina">Katsina</option>
-                    <option value="Kebbi">Kebbi</option>
-                    <option value="Kogi">Kogi</option>
-                    <option value="Kwara">Kwara</option>
-                    <option value="Lagos">Lagos</option>
-                    <option value="Nasarawa">Nasarawa</option>
-                    <option value="Niger">Niger</option>
-                    <option value="Ogun">Ogun</option>
-                    <option value="Ondo">Ondo</option>
-                    <option value="Osun">Osun</option>
-                    <option value="Oyo">Oyo</option>
-                    <option value="Plateau">Plateau</option>
-                    <option value="Rivers">Rivers</option>
-                    <option value="Sokoto">Sokoto</option>
-                    <option value="Taraba">Taraba</option>
-                    <option value="Yobe">Yobe</option>
-                    <option value="Zamfara">Zamfara</option>
-                </select>
+                <div class="select-container">
+                    <select id="Country" name="state" class="custom-select">
+                        <option value="" selected="selected">Select a state</option>
+                        <option value="Abia">Abia</option>
+                        <option value="Abuja">Abuja</option>
+                        <option value="Adamawa">Adamawa</option>
+                        <option value="Akwa Ibom">Akwa Ibom</option>
+                        <option value="Anambra">Anambra</option>
+                        <option value="Bauchi">Bauchi</option>
+                        <option value="Bayelsa">Bayelsa</option>
+                        <option value="Benue">Benue</option>
+                        <option value="Borno">Borno</option>
+                        <option value="Cross River">Cross River</option>
+                        <option value="Delta">Delta</option>
+                        <option value="Ebonyi">Ebonyi</option>
+                        <option value="Edo">Edo</option>
+                        <option value="Ekiti">Ekiti</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="Gombe">Gombe</option>
+                        <option value="Imo">Imo</option>
+                        <option value="Jigawa">Jigawa</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Kano">Kano</option>
+                        <option value="Katsina">Katsina</option>
+                        <option value="Kebbi">Kebbi</option>
+                        <option value="Kogi">Kogi</option>
+                        <option value="Kwara">Kwara</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Nasarawa">Nasarawa</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Ogun">Ogun</option>
+                        <option value="Ondo">Ondo</option>
+                        <option value="Osun">Osun</option>
+                        <option value="Oyo">Oyo</option>
+                        <option value="Plateau">Plateau</option>
+                        <option value="Rivers">Rivers</option>
+                        <option value="Sokoto">Sokoto</option>
+                        <option value="Taraba">Taraba</option>
+                        <option value="Yobe">Yobe</option>
+                        <option value="Zamfara">Zamfara</option>
+                    </select>
+                    <div class="icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
 
                 <div class="radio-group">
                     <p>Do you have an installer?</p>
@@ -92,28 +100,26 @@
                     <input type="radio" id="home-duplex" name="home-type" value="duplex">
                     <label for="home-bungalow">Bungalow</label>
                     <input type="radio" id="home-bungalow" name="home-type" value="bungalow">
-                    <label for="home-flat">1 Bedroom Flat</label>
-                    <input type="radio" id="home-flat" name="home-type" value="1-bedroom-flat">
-                    <label for="home-flat">2 Bedroom Flat</label>
-                    <input type="radio" id="home-flat" name="home-type" value="2-bedroom-flat">
-                    <label for="home-flat">3 Bedroom Flat</label>
-                    <input type="radio" id="home-flat" name="home-type" value="3-bedroom-flat">
-                    <label for="home-flat">4 Bedroom Flat</label>
-                    <input type="radio" id="home-flat" name="home-type" value="4-bedroom-flat">
+                    <label for="home-1flat">1 Bedroom Flat</label>
+                    <input type="radio" id="home-1flat" name="home-type" value="1-bedroom-flat">
+                    <label for="home-2flat">2 Bedroom Flat</label>
+                    <input type="radio" id="home-2flat" name="home-type" value="2-bedroom-flat">
+                    <label for="home-3flat">3 Bedroom Flat</label>
+                    <input type="radio" id="home-3flat" name="home-type" value="3-bedroom-flat">
+                    <label for="home-4flat">4 Bedroom Flat</label>
+                    <input type="radio" id="home-4flat" name="home-type" value="4-bedroom-flat">
                     <!-- Add more home types as needed -->
                 </div>
 
                 <div class="radio-group">
                     <p>Select the appliances you plan to power with solar:</p>
                     <div class="checkbox-group">
-                        <label for="appliances-lights">Lights</label>
-                        <input type="checkbox" id="appliances-lights" name="appliances" value="lights">
-                        <label for="appliances-fans">Fans</label>
-                        <input type="checkbox" id="appliances-fans" name="appliances" value="fans">
                         <label for="appliances-refrigerator">Refrigerator</label>
                         <input type="checkbox" id="appliances-refrigerator" name="appliances" value="refrigerator">
                         <label for="appliances-refrigerator">Deep Freezer</label>
                         <input type="checkbox" id="appliances-deepfreezer" name="appliances" value="deepfreezer">
+                        <label for="appliances-lights">Lights</label>
+                        <input type="checkbox" id="appliances-lights" name="appliances" value="lights">
                         <label for="appliances-refrigerator">TV</label>
                         <input type="checkbox" id="appliances-TV" name="appliances" value="TV">
                         <label for="appliances-refrigerator">AC</label>
@@ -124,6 +130,8 @@
                         <input type="checkbox" id="appliances-washingmachine" name="appliances" value="washingmachine">
                         <label for="appliances-refrigerator">Home Office</label>
                         <input type="checkbox" id="appliances-homeoffice" name="appliances" value="homeoffice">
+                        <label for="appliances-fans">Fans</label>
+                        <input type="checkbox" id="appliances-fans" name="appliances" value="fans">
                         <label for="appliances-refrigerator">Others</label>
                         <input type="checkbox" id="appliances-others" name="appliances" value="others">
                     </div>
@@ -135,6 +143,32 @@
 
                     <label for="backup-power-hours">How many hours per day do you need battery backup power?</label>
                     <input type="number" id="backup-power-hours" name="backup-power-hours" required>
+                </div>
+            </div>
+
+            <h3>Choose a Product</h3>
+            <p>Help Me Choose Solar</p>
+            <div class="product-box">
+                <img src="./assets/images/425_Design_D.avif" alt="Product 1">
+                <div class="product-text">
+                    <h3>Powerwall Only</h3>
+                    <p>Energy backup for your home</p>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <img src="/assets/images/425_Specs_D.avif" alt="Product 2">
+                <div class="product-text">
+                    <h3>Solar Panels + Powerwall</h3>
+                    <p>Panels for your existing roof with backup protection</p>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <img src="/assets/images/heroimage.avif" alt="Product 3">
+                <div class="product-text">
+                    <h3>Solar Roof + Powerwall</h3>
+                    <p>New luxury integrated solar roof with backup protection</p>
                 </div>
             </div>
         </form>

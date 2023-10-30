@@ -116,7 +116,7 @@ nav {
 
 .cta-button.order-now {
     background-color: #3CD458;
-    color: #000;
+    color: #fff;
     margin-right: 30px;
 }
 
@@ -129,7 +129,7 @@ nav {
 
 .cta-button.consultation:hover {
     background-color: #3CD458;
-    color: #000;
+    color: #fff;
     border: 2px solid transparent;
 }
 
@@ -192,7 +192,7 @@ nav {
 
 .cta-button.learn-more:hover {
     background-color: #3CD458;
-    color: #000;
+    color: #fff;
 }
 
 .cta-button.get-started {
@@ -201,7 +201,7 @@ nav {
     width: 80%;
     background-color: #3CD458;
     border: 3px solid #3CD458;
-    color: #000;
+    color: #fff;
 }
 
 /* Design Section */
@@ -373,7 +373,7 @@ nav {
 
 .button-container .cta-button.green{
     background-color: #3CD458;
-    color: #000;
+    color: #fff;
     border: 2px solid #3CD458;
 
 }
@@ -384,9 +384,9 @@ nav {
     justify-content: center;
     padding: 10px 20px;
     margin-right: 10px;
-    border: 2px solid #000;
+    border: 2px solid #3CD458;
     background-color: transparent;
-    color: #000;
+    color: #3CD458;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s, border 0.3s;
@@ -451,7 +451,7 @@ nav {
 
 .learn:hover {
     background-color: #3CD458;
-    color: #000;
+    color: #fff;
     border-color: #3CD458;
 }
 
