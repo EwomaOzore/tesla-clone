@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <title>Tesla Site</title>
+    <script src="https://js.stripe.com/v3/"></script>
 </head>
 
 <body>
@@ -26,23 +27,23 @@
     </header>
 
     <div class="product">
-        <div class="product-box">
-            <img src="./assets/images/425_Design_D.avif" alt="Product 1">
-            <div class="product-text">
-                <h3>Powerwall Only</h3>
-                <p>Energy backup for your home</p>
-                <h4>₦ 245,000</h4>
+            <div class="product-box">
+                <img src="./assets/images/425_Design_D.avif" alt="Product 1">
+                <div class="product-text">
+                    <h3>Powerwall Only</h3>
+                    <p>Energy backup for your home</p>
+                    <h4>₦ 245,000</h4>
+                </div>
             </div>
-        </div>
 
-        <div class="product-box">
-            <img src="/assets/images/425_Specs_D.avif" alt="Product 2">
-            <div class="product-text">
-                <h3>Solar Panels + Powerwall</h3>
-                <p>Panels for your existing roof with backup protection</p>
-                <h4>₦ 455,000</h4>
+            <div class="product-box">
+                <img src="/assets/images/425_Specs_D.avif" alt="Product 2">
+                <div class="product-text">
+                    <h3>Solar Panels + Powerwall</h3>
+                    <p>Panels for your existing roof with backup protection</p>
+                    <h4>₦ 455,000</h4>
+                </div>
             </div>
-        </div>
 
         <div class="product-box">
             <img src="/assets/images/heroimage.avif" alt="Product 3">
@@ -53,10 +54,33 @@
             </div>
         </div>
     </div>
+
     <div class="button">
-        <a href="index3.html" class="next">Continue to payment</a>
+        <button id="checkout" class="next">Continue to payment</button>
         <a href="index2.html" class="back">Go Back</a>
     </div>
+
+    <script>
+        var stripe = Stripe('pk_test_51NhWgwDkDh4i3Oyen5lbxgw6Cz2Zx4mu4mktfKwdHpY9TpXHpT11SiwWmPcvwroAvl5OU2lE7Kxcu9kNw7UQhuGo003l1lPxto');
+
+        console.log(stripe);
+        document.getElementById("checkout").addEventListener("click", function(){
+            stripe.redirectToCheckout({
+                lineItems: [
+                    {
+                        price: "price_1O6zUhDkDh4i3OyeEpgQpBgd",
+                        quantity: 1,
+                    },
+                ],
+                mode: "payment",
+                successUrl: "https://www.google.com",
+                cancelUrl: "https://tesla-clone-nine-gamma.vercel.app/index3.html"
+            })
+            .then(function(result){
+
+            });
+        });
+    </script>
 </body>
 
 </html>
