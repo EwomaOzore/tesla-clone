@@ -132,7 +132,7 @@ input[type="number"]::before {
 .next{
     display: inline-block;
     width: 95%;
-    padding: 20px 10px;
+    padding: 10px 10px;
     border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
