@@ -114,20 +114,20 @@ nav {
 }
 
 .cta-button.order-now {
-    background-color: #fff;
+    background-color: #3CD458;
     color: #000;
     margin-right: 30px;
 }
 
 .cta-button.consultation {
     background-color: transparent;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid #3CD458;
+    color: #3CD458;
     padding: 17px;
 }
 
 .cta-button.consultation:hover {
-    background-color: #fff;
+    background-color: #3CD458;
     color: #000;
     border: 2px solid transparent;
 }
@@ -184,22 +184,22 @@ nav {
     text-align: center;
     background-color: transparent;
     width: 80%;
-    border: 3px solid #000;
-    color: #000;
+    border: 3px solid #3CD458;
+    color: #3CD458;
     transition: background-color 0.3s, color 0.3s;
     margin-bottom: 25px;
 }
 
 .cta-button.learn-more:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #3CD458;
+    color: #000;
 }
 
 .cta-button.get-started {
     text-align: center;
     width: 80%;
-    background-color: #cfcdcd;
-    border: 3px solid #cfcdcd;
+    background-color: #3CD458;
+    border: 3px solid #3CD458;
     color: #000;
 }
 
@@ -376,7 +376,7 @@ nav {
     justify-content: center;
     padding: 10px 20px;
     margin-right: 10px;
-    background-color: transparent;
+    background-color: #3CD458;
     border: 2px solid #000;
     color: #000;
     text-decoration: none;
@@ -385,7 +385,7 @@ nav {
 }
 
 .button-container .cta-button:hover {
-    background-color: #000;
+    background-color: #3CD458;
     color: #fff;
     border: 2px solid transparent;
 }
@@ -432,9 +432,9 @@ nav {
 .learn {
     display: inline-block;
     padding: 10px 20px;
-    border: 2px solid #fff;
+    border: 2px solid #3CD458;
     background-color: transparent;
-    color: #fff;
+    color: #3CD458;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
@@ -442,16 +442,16 @@ nav {
 }
 
 .learn:hover {
-    background-color: #fff;
+    background-color: #3CD458;
     color: #000;
-    border-color: #fff;
+    border-color: #3CD458;
 }
 
 .consultation {
     display: inline-block;
     padding: 10px 20px;
-    border: 2px solid #555;
-    background-color: #555;
+    border: 2px solid #3CD458;
+    background-color: #3CD458;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
