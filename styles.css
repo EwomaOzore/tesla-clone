@@ -29,10 +29,8 @@ nav {
     z-index: 1;
 }
 
-.logo img {
-    width: 100px;
-    /* Adjust the width as needed */
-    margin: 0 20px;
+.logo {
+    margin-left: 30px;
 }
 
 .nav-links {
@@ -56,6 +54,7 @@ nav {
     display: flex;
     align-items: center;
     margin-right: 20px;
+    color: #fff;
 }
 
 .icons a {
@@ -66,7 +65,7 @@ nav {
 
 .icons i {
     font-size: 20px;
-    /* Adjust the icon size as needed */
+    margin-right: 20px;
 }
 
 .hero-content {
